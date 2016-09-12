@@ -9,9 +9,28 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
+import os
+import sys
+
+import django
+
+
+# DJANGO_PROJECT_PATH = '/home/dmitry/work/django/d3/pricemon'
+DJANGO_PROJECT_PATH = '/home/dmitry/work/django/git/pmon'
+DJANGO_SETTINGS_MODULE = 'pricemon.settings'
+
+sys.path.insert(0, DJANGO_PROJECT_PATH)
+os.environ['DJANGO_SETTINGS_MODULE'] = DJANGO_SETTINGS_MODULE
+
+# pricemon.pricemon.settings.configure()
+django.setup()
+
 BOT_NAME = 'pbot'
 
 SPIDER_MODULES = ['pbot.spiders']
+
+
+BOT_NAME = 'pbot'
 NEWSPIDER_MODULE = 'pbot.spiders'
 
 
@@ -64,9 +83,10 @@ DOWNLOAD_DELAY = 1
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'pbot.pipelines.SomePipeline': 300,
-#}
+ITEM_PIPELINES = {
+   # 'pbot.pipelines.SomePipeline': 300,
+   'pbot.pipelines.djangoPipeline': 1000,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

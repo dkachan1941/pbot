@@ -9,3 +9,8 @@
 class PbotPipeline(object):
     def process_item(self, item, spider):
         return item
+
+class djangoPipeline(object):
+    def process_item(self, item, spider):
+        item.save()
+        return item

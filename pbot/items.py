@@ -7,6 +7,12 @@
 
 import scrapy
 
+from scrapy_djangoitem import DjangoItem
+from tasks.models import Article
+
+class djangoArticle(DjangoItem):
+    django_model = Article
+
 # from scrapy.contrib_exp.djangoitem import DjangoItem
 # from pmon.tasks.models import Article
  

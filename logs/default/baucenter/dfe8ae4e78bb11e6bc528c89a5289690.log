@@ -1,9 +1,0 @@
-2016-09-12 07:38:19 [scrapy] INFO: Scrapy 1.1.2 started (bot: pbot)
-2016-09-12 07:38:19 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'pbot.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['pbot.spiders'], 'BOT_NAME': 'pbot', 'FEED_URI': 'file:///home/dmitry/work/django/git/pbot/items/default/baucenter/dfe8ae4e78bb11e6bc528c89a5289690.jl', 'LOG_FILE': 'logs/default/baucenter/dfe8ae4e78bb11e6bc528c89a5289690.log', 'DOWNLOAD_DELAY': 1}
-2016-09-12 07:38:20 [scrapy] INFO: Enabled extensions:
-['scrapy.extensions.feedexport.FeedExporter',
- 'scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2016-09-12 07:38:20 [twisted] CRITICAL: Unhandled error in Deferred:
-2016-09-12 07:38:20 [twisted] CRITICAL: 

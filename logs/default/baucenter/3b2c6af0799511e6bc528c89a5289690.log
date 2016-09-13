@@ -1,0 +1,1526 @@
+2016-09-13 09:34:15 [scrapy] INFO: Scrapy 1.1.2 started (bot: pbot)
+2016-09-13 09:34:15 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'pbot.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['pbot.spiders'], 'BOT_NAME': 'pbot', 'FEED_URI': 'file:///home/dmitry/work/django/git/pbot/items/default/baucenter/3b2c6af0799511e6bc528c89a5289690.jl', 'LOG_FILE': 'logs/default/baucenter/3b2c6af0799511e6bc528c89a5289690.log', 'DOWNLOAD_DELAY': 0.5}
+2016-09-13 09:34:16 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-09-13 09:34:16 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-09-13 09:34:16 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-09-13 09:34:16 [scrapy] INFO: Enabled item pipelines:
+['pbot.pipelines.djangoPipeline']
+2016-09-13 09:34:16 [scrapy] INFO: Spider opened
+2016-09-13 09:34:16 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-09-13 09:34:16 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-09-13 09:34:16 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/robots.txt> (referer: None)
+2016-09-13 09:34:26 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/> (referer: None)
+2016-09-13 09:34:27 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/catalog/> (referer: https://www.baucenter.ru/)
+2016-09-13 09:34:27 [scrapy] DEBUG: Filtered duplicate request: <GET https://www.baucenter.ru/catalog/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2016-09-13 09:34:28 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sad_i_ogorod/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:29 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/osveshchenie/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:30 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/stolyarnye_izdeliya_dveri/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:30 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kukhni_tovary_dlya_doma_/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:31 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/oboi_dekor_kraski/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:31 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/napolnye_pokrytiya/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:32 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/santekhnika/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:32 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/plitka/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:33 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/instrumenty_tekhnika/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:33 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/elektrotovary/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:34 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/vodosnabzhenie_otoplenie/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:35 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/stroymaterialy/> (referer: https://www.baucenter.ru/catalog/)
+2016-09-13 09:34:35 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/udobreniya4125/> (referer: https://www.baucenter.ru/sad_i_ogorod/)
+2016-09-13 09:34:36 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/antimoskitnye_setki_repelenty/> (referer: https://www.baucenter.ru/sad_i_ogorod/)
+2016-09-13 09:34:36 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/vazy_svechi_aksessuary_dlya_tsvetov/> (referer: https://www.baucenter.ru/sad_i_ogorod/)
+2016-09-13 09:34:37 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/zemlya_i_mulchiruyushchie_sredstva/> (referer: https://www.baucenter.ru/sad_i_ogorod/)
+2016-09-13 09:34:37 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/materialy_dlya_sadovykh_dorozhek1/> (referer: https://www.baucenter.ru/sad_i_ogorod/)
+2016-09-13 09:34:38 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/khranenie_urozhaya/> (referer: https://www.baucenter.ru/sad_i_ogorod/)
+2016-09-13 09:34:39 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/svetilniki_tochechnye/> (referer: https://www.baucenter.ru/osveshchenie/)
+2016-09-13 09:34:39 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/lenta_diodnaya_i_komplektuyushchie/> (referer: https://www.baucenter.ru/osveshchenie/)
+2016-09-13 09:34:40 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/mebelnaya_furnitura/> (referer: https://www.baucenter.ru/kukhni_tovary_dlya_doma_/)
+2016-09-13 09:34:41 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sredstva_dlya_pokleyki/> (referer: https://www.baucenter.ru/oboi_dekor_kraski/)
+2016-09-13 09:34:41 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/parket/> (referer: https://www.baucenter.ru/napolnye_pokrytiya/)
+2016-09-13 09:34:41 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/linoleum/> (referer: https://www.baucenter.ru/napolnye_pokrytiya/)
+2016-09-13 09:34:42 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/mozaika1/> (referer: https://www.baucenter.ru/plitka/)
+2016-09-13 09:34:43 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/oborudovanie_dlya_masterskikh/> (referer: https://www.baucenter.ru/instrumenty_tekhnika/)
+2016-09-13 09:34:43 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/komplektuyushchie_dlya_elektricheskoy_razvodki/> (referer: https://www.baucenter.ru/elektrotovary/)
+2016-09-13 09:34:44 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistema_dymokhodov/> (referer: https://www.baucenter.ru/vodosnabzhenie_otoplenie/)
+2016-09-13 09:34:44 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/metalloprokat/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:34:45 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/udobreniya_dlya_ulichnykh_rasteniy6571/> (referer: https://www.baucenter.ru/udobreniya4125/)
+2016-09-13 09:34:45 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x91\xd0\xbe\xd1\x80\xd0\xbe\xd1\x84\xd0\xbe\xd1\x81\xd0\xba\xd0\xb01\xd0\xba\xd0\xb3',
+ 'photo_path': '/preview/r/x0/c/x0',
+ 'price': '99.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:46 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/setki_ot_komarov/> (referer: https://www.baucenter.ru/antimoskitnye_setki_repelenty/)
+2016-09-13 09:34:46 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9b\xd0\xb5\xd0\xbd\xd1\x82\xd0\xb0\xd0\xbb\xd0\xb8\xd0\xbf\xd1\x83\xd1\x87\xd0\xba\xd0\xb0\xd1\x81\xd0\xb0\xd0\xbc\xd0\xbe\xd0\xba\xd0\xbb\xd0\xb5\xd1\x8f\xd1\x89\xd0\xb0\xd1\x8f\xd1\x81\xd1\x8f5,6\xd0\xbc\xd0\xb4\xd0\xbb\xd1\x8f\xd1\x81\xd0\xb5\xd1\x82\xd0\xbe\xd0\xba\xd0\xbc\xd0\xbe\xd1\x81\xd0\xba\xd0\xb8\xd1\x82\xd0\xbd\xd1\x8b\xd1\x85',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/96/960000037-0.jpg',
+ 'price': '59.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:47 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/zemlya/> (referer: https://www.baucenter.ru/zemlya_i_mulchiruyushchie_sredstva/)
+2016-09-13 09:34:47 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x93\xd1\x80\xd1\x83\xd0\xbd\xd1\x82\xd0\xb4\xd0\xbb\xd1\x8f\xd1\x80\xd0\xb0\xd1\x81\xd1\x81\xd0\xb0\xd0\xb4\xd1\x8b\xd1\x82\xd0\xb5\xd0\xbf\xd0\xbb\xd0\xb8\xd1\x86\xd0\xb3\xd1\x80\xd1\x8f\xd0\xb4\xd0\xbe\xd0\xba50\xd0\xbb',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/933000168-0.jpg',
+ 'price': '219.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:48 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/svechi_lampady_dekorativnye/> (referer: https://www.baucenter.ru/vazy_svechi_aksessuary_dlya_tsvetov/)
+2016-09-13 09:34:48 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/materialy_dlya_sadovykh_dorozhek/> (referer: https://www.baucenter.ru/materialy_dlya_sadovykh_dorozhek1/)
+2016-09-13 09:34:48 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa4\xd0\xbe\xd0\xbd\xd0\xb0\xd1\x80\xd0\xb8\xd1\x82\xd0\xb5\xd0\xbc\xd0\xbd\xd0\xbe\xd0\xb5\xd0\xb4\xd0\xb5\xd1\x80\xd0\xb5\xd0\xb2\xd0\xbe\xd0\xbd\xd0\xb0\xd0\xb1\xd0\xbe\xd1\x802\xd1\x88\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/937000980-0.jpg',
+ 'price': '4990.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:48 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa4\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb0\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbe\xd1\x82\xd0\xbb\xd0\xb8\xd0\xb2\xd0\xba\xd0\xb8\xd1\x81\xd0\xb0\xd0\xb4\xd0\xbe\xd0\xb2\xd1\x8b\xd1\x85\xd0\xb4\xd0\xbe\xd1\x80\xd0\xbe\xd0\xb6\xd0\xb5\xd0\xba50\xd1\x8550\xd1\x856\xd1\x81\xd0\xbcVORTEX',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/91/910000175-0.jpg',
+ 'price': '639.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:48 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sbor_urozhaya_i_organizatsiya_khraneniya/> (referer: https://www.baucenter.ru/khranenie_urozhaya/)
+2016-09-13 09:34:49 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9c\xd0\xb5\xd1\x88\xd0\xbe\xd0\xba\xd0\xb4\xd0\xb6\xd1\x83\xd1\x82\xd0\xbe\xd0\xb2\xd1\x8b\xd0\xb950\xd1\x8580\xd1\x81\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/934002595-0.jpg',
+ 'price': '99.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:49 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/svetilniki_tochechnye_mebelnye_i_lestnichnye/> (referer: https://www.baucenter.ru/svetilniki_tochechnye/)
+2016-09-13 09:34:49 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd0\xb2\xd0\xb5\xd1\x82\xd0\xb8\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xb8\xd0\xba\xd1\x82\xd0\xbe\xd1\x87\xd0\xb5\xd1\x87\xd0\xbd\xd1\x8b\xd0\xb9\xd0\xb3\xd1\x80\xd1\x83\xd0\xbd\xd1\x82\xd0\xbe\xd0\xb2\xd1\x8b\xd0\xb9IL001224151\xd1\x8550\xd0\x92\xd1\x82MR16\xd0\x98\xd0\xbc\xd0\xb5\xd0\xba\xd1\x81',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/80/805004399-0.jpg',
+ 'price': '559.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:50 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/lenta_diodnaya/> (referer: https://www.baucenter.ru/lenta_diodnaya_i_komplektuyushchie/)
+2016-09-13 09:34:50 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9b\xd0\xb5\xd0\xbd\xd1\x82\xd0\xb0\xd0\xb4\xd0\xb8\xd0\xbe\xd0\xb4\xd0\xbd\xd0\xb0\xd1\x8f3,6\xd0\x92\xd1\x82/\xd0\xbc\xd1\x82\xd0\xb5\xd0\xbf\xd0\xbb\xd1\x8b\xd0\xb9\xd0\xb1\xd0\xb5\xd0\xbb\xd1\x8b\xd0\xb95\xd0\xbcPhilips',
+ 'photo_path': '/preview/r/x0/c/x0',
+ 'price': '1990.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x83\xd0\xbf\xd0\xb0\xd0\xba',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x83\xd0\xbf\xd0\xb0\xd0\xba'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:50 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/tovary_dlya_detskoy_bezopasnosti5978/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:34:50 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9d\xd0\xb0\xd0\xba\xd0\xbb\xd0\xb0\xd0\xb4\xd0\xba\xd0\xb8\xd0\xbd\xd0\xb0\xd1\x83\xd0\xb3\xd0\xbb\xd1\x8b\xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb04\xd1\x88\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/60/600000367-0.jpg',
+ 'price': '159.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x83\xd0\xbf\xd0\xb0\xd0\xba',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x83\xd0\xbf\xd0\xb0\xd0\xba'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:51 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sredstva_dlya_pokleyki_oboev/> (referer: https://www.baucenter.ru/sredstva_dlya_pokleyki/)
+2016-09-13 09:34:51 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9a\xd0\xbb\xd0\xb5\xd0\xb9\xd0\xb4\xd0\xbb\xd1\x8f\xd1\x84\xd0\xbe\xd1\x82\xd0\xbe\xd0\xbe\xd0\xb1\xd0\xbe\xd0\xb5\xd0\xb2\xd1\x83\xd0\xbd\xd0\xb8\xd0\xb2\xd0\xb5\xd1\x80\xd1\x81\xd0\xb0\xd0\xbb\xd1\x8c\xd0\xbd\xd1\x8b\xd0\xb985\xd0\xb3KLEO',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/36/365000153-0.jpg',
+ 'price': '159.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:51 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/doska_parketnaya/> (referer: https://www.baucenter.ru/parket/)
+2016-09-13 09:34:52 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\xb0\xd1\x80\xd0\xba\xd0\xb5\xd1\x82\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xb4\xd0\xbe\xd1\x81\xd0\xba\xd0\xb0\xd0\x9f\xd0\xbe\xd0\xbb\xd0\xb0\xd1\x80\xd0\x92\xd1\x83\xd0\xb4\xd0\xaf\xd1\x81\xd0\xb5\xd0\xbd\xd1\x8c\xd0\x91\xd0\xb5\xd0\xbb\xd1\x8b\xd0\xb9\xd0\x9d\xd0\xb0\xd1\x82\xd1\x83\xd1\x80\xd0\xb0\xd0\xbb\xd1\x8c\xd0\xbd\xd1\x8b\xd0\xb9',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/15/155000238-0.jpg',
+ 'price': '1190.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd0\xba\xd0\xb2.\xd0\xbc',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xba\xd0\xb2. \xd0\xbc'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:52 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/linoleum_s_zashchitnym_sloem_do_0_35mm/> (referer: https://www.baucenter.ru/linoleum/)
+2016-09-13 09:34:52 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9b\xd0\xb8\xd0\xbd\xd0\xbe\xd0\xbb\xd0\xb5\xd1\x83\xd0\xbc\xd0\xa4\xd0\xb0\xd0\xb2\xd0\xbe\xd1\x80\xd0\xb8\xd1\x82\xd0\x91\xd0\xbe\xd1\x81\xd1\x82\xd0\xbe\xd0\xbd23,5\xd0\xbc/3,3\xd0\xbc\xd0\xbc/0,3\xd0\xbc\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/10/101002786-0.jpg',
+ 'price': '269.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd0\xba\xd0\xb2.\xd0\xbc',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xba\xd0\xb2. \xd0\xbc'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:54 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/mozaika/> (referer: https://www.baucenter.ru/mozaika1/)
+2016-09-13 09:34:54 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\xbb\xd0\xb8\xd1\x82\xd0\xba\xd0\xb0\xd0\xbc\xd0\xbe\xd0\xb7\xd0\xb0\xd0\xb8\xd1\x87\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xa2\xd0\xb5\xd0\xbc\xd0\xb0\xd1\x80\xd0\xb8\xd1\x81\xd0\xb5\xd1\x80\xd0\xb5\xd0\xb1\xd1\x80\xd1\x8f\xd0\xbd\xd0\xb0\xd1\x8f29,8\xd1\x8529,8\xd1\x81\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/20/206100153-0.jpg',
+ 'price': '129.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:54 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/verstaki_stoly_yashchiki/> (referer: https://www.baucenter.ru/oborudovanie_dlya_masterskikh/)
+2016-09-13 09:34:54 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x92\xd0\xb5\xd1\x80\xd1\x81\xd1\x82\xd0\xb0\xd0\xba\xd0\xb4\xd0\xbb\xd1\x8f\xd1\x80\xd0\xb0\xd0\xb1\xd0\xbe\xd1\x82\xd1\x81\xd1\x8d\xd0\xbb\xd0\xb5\xd0\xba\xd1\x82\xd1\x80\xd0\xbe\xd0\xb8\xd0\xbd\xd1\x81\xd1\x82\xd1\x80\xd1\x83\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82\xd0\xbe\xd0\xbcMasterCut1500Wolfcraft',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/70/707000017-0.jpg',
+ 'price': '26690.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:55 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistema_dymokhodov_stalnykh/> (referer: https://www.baucenter.ru/sistema_dymokhodov/)
+2016-09-13 09:34:55 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa2\xd1\x80\xd1\x83\xd0\xb1\xd0\xb0\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xb4\xd1\x8b\xd0\xbc\xd0\xbe\xd1\x85\xd0\xbe\xd0\xb4\xd0\xb0\xd0\xbd\xd0\xb5\xd1\x80\xd0\xb6\xd0\xb0\xd0\xb2\xd0\xb5\xd1\x8e\xd1\x89\xd0\xb0\xd1\x8f\xd1\x81\xd1\x82\xd0\xb0\xd0\xbb\xd1\x8cd150L1000',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/53/536000456-0.jpg',
+ 'price': '899.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:56 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistemy_okhrany_i_krepleniya_provodki/> (referer: https://www.baucenter.ru/komplektuyushchie_dlya_elektricheskoy_razvodki/)
+2016-09-13 09:34:56 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd1\x82\xd1\x8f\xd0\xb6\xd0\xba\xd0\xb0\xd1\x87\xd0\xb5\xd1\x80\xd0\xbd\xd0\xb0\xd1\x8fRAPSTRAPIMT3806824\xd1\x88\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/87/878001039-0.jpg',
+ 'price': '299.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x83\xd0\xbf\xd0\xb0\xd0\xba',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x83\xd0\xbf\xd0\xb0\xd0\xba'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:57 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/setki_svarnye_i_shtukaturnye/> (referer: https://www.baucenter.ru/metalloprokat/)
+2016-09-13 09:34:57 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd0\xb5\xd1\x82\xd0\xba\xd0\xb0\xd1\x88\xd1\x82\xd1\x83\xd0\xba\xd0\xb0\xd1\x82\xd1\x83\xd1\x80\xd0\xbd\xd0\xb0\xd1\x8f20\xd1\x851,5\xd1\x850,5\xd1\x851000\xd0\xbc\xd0\xbc\xd0\xbe\xd1\x86\xd0\xb8\xd0\xbd\xd0\xba\xd0\xbe\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8fL-10\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/50/507000140-0.jpg',
+ 'price': '649.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:58 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistemy_montazha_provodki/> (referer: https://www.baucenter.ru/komplektuyushchie_dlya_elektricheskoy_razvodki/)
+2016-09-13 09:34:58 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x98\xd0\xb7\xd0\xbe\xd0\xbb\xd0\xb5\xd0\xbd\xd1\x82\xd0\xb0\xd0\xb2\xd1\x83\xd0\xbb\xd0\xba\xd0\xb0\xd0\xbd\xd0\xb8\xd0\xb7\xd0\xb8\xd1\x80\xd1\x83\xd1\x8e\xd1\x89\xd0\xb0\xd1\x8f15\xd0\xbc\xd0\xbc5\xd0\xbc\xd0\xb5\xd1\x82\xd1\x80\xd0\xbe\xd0\xb2\xd0\xa2\xd0\x94\xd0\x9c',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/87/878000987-0.jpg',
+ 'price': '159.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:34:59 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/armatura_ugolki_truby/> (referer: https://www.baucenter.ru/metalloprokat/)
+2016-09-13 09:34:59 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa4\xd0\xb8\xd0\xba\xd1\x81\xd0\xb0\xd1\x82\xd0\xbe\xd1\x80\xd0\xb0\xd1\x80\xd0\xbc\xd0\xb0\xd1\x82\xd1\x83\xd1\x80\xd1\x8b\xd0\xa1\xd1\x82\xd1\x83\xd0\xbb\xd1\x8c\xd1\x87\xd0\xb8\xd0\xba25\xd0\xbc\xd0\xbc50\xd1\x88\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/50/507000167-0.jpg',
+ 'price': '79.90\xd0\xb7\xd0\xb0\xd1\x83\xd0\xbf\xd0\xb0\xd0\xba',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x83\xd0\xbf\xd0\xb0\xd0\xba'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:00 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/linoleum_s_zashchitnym_sloem_bolee_0_35mm/> (referer: https://www.baucenter.ru/linoleum/)
+2016-09-13 09:35:00 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9b\xd0\xb8\xd0\xbd\xd0\xbe\xd0\xbb\xd0\xb5\xd1\x83\xd0\xbc\xd0\x98\xd0\xb4\xd0\xb8\xd0\xbb\xd0\xbb\xd0\xb8\xd1\x8f\xd0\x9a\xd0\xb8\xd0\xbd\xd0\xb343\xd0\xbc/3,4\xd0\xbc\xd0\xbc/0,5\xd0\xbc\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/10/101002793-0.jpg',
+ 'price': '289.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd0\xba\xd0\xb2.\xd0\xbc',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xba\xd0\xb2. \xd0\xbc'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:01 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kanaly_i_reshyetki_ventilyatsionnye_dlya_dymokhodov/> (referer: https://www.baucenter.ru/sistema_dymokhodov/)
+2016-09-13 09:35:01 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa0\xd0\xb5\xd1\x88\xd0\xb5\xd1\x82\xd0\xba\xd0\xb0\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xba\xd0\xb0\xd0\xbc\xd0\xb8\xd0\xbd\xd0\xbe\xd0\xb2175x245\xd0\xbc\xd0\xbc\xd0\xb0\xd0\xbd\xd1\x82\xd0\xb8\xd1\x87\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xbc\xd0\xb5\xd0\xb4\xd1\x8c',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/53/536000225-0.jpg',
+ 'price': '659.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:01 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/podemnye_mekhanizmy2946/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:35:01 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9b\xd0\xb8\xd1\x84\xd1\x82\xd0\xb3\xd0\xb0\xd0\xb7\xd0\xbe\xd0\xb2\xd1\x8b\xd0\xb9\xd0\xbf\xd0\xbe\xd0\xb4\xd1\x8a\xd0\xb5\xd0\xbc\xd0\xbd\xd1\x8b\xd0\xb9100N10\xd0\xba\xd0\xb3',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/62/625002524-0.jpg',
+ 'price': '109.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:03 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sredstva_dlya_pokleyki_dekorativnykh_pokrytiy_i_pogonazha/> (referer: https://www.baucenter.ru/sredstva_dlya_pokleyki/)
+2016-09-13 09:35:03 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/amortizatory_mebelnye1744/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:35:03 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/mebelnyy_krepezh3553/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:35:03 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9a\xd0\xbb\xd0\xb5\xd0\xb9\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbf\xd0\xbe\xd1\x82\xd0\xbe\xd0\xbb\xd0\xbe\xd1\x87\xd0\xbd\xd1\x8b\xd1\x85\xd0\xbf\xd0\xbe\xd0\xba\xd1\x80\xd1\x8b\xd1\x82\xd0\xb8\xd0\xb94\xd0\xba\xd0\xb3\xd0\x9a\xd0\xb2\xd0\xbe\xd0\xbb\xd0\xb8\xd1\x82\xd0\xb8\xd0\xa1\xd1\x82\xd0\xb8\xd1\x80\xd0\xbe\xd0\xbf\xd0\xbe\xd1\x80',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/36/365000038-0.jpg',
+ 'price': '199.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:03 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x90\xd0\xbc\xd0\xbe\xd1\x80\xd1\x82\xd0\xb8\xd0\xb7\xd0\xb0\xd1\x82\xd0\xbe\xd1\x80\xd0\xbc\xd0\xb5\xd0\xb1\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xbd\xd1\x8b\xd0\xb9\xd1\x81\xd0\xb0\xd0\xbc\xd0\xbe\xd0\xba\xd0\xbb\xd0\xb5\xd1\x8e\xd1\x89\xd0\xb8\xd0\xb9\xd1\x81\xd1\x8f25\xd1\x88\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/62/625000846-0.jpg',
+ 'price': '69.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:04 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd1\x82\xd1\x8f\xd0\xb6\xd0\xba\xd0\xb0\xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb5\xd1\x88\xd0\xbd\xd0\xb8\xd1\x86\xd1\x8b\xd0\xbe\xd1\x86\xd0\xb8\xd0\xbd\xd0\xba\xd0\xbe\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f100\xd0\xbc\xd0\xbc1\xd1\x88\xd1\x82"Element',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/60/600000074-0.jpg',
+ 'price': '59.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x83\xd0\xbf\xd0\xb0\xd0\xba',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x83\xd0\xbf\xd0\xb0\xd0\xba'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:04 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/napravlyayushchie_dlya_vydvizhnykh_yashchikov2218/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:35:04 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9d\xd0\xb0\xd0\xbf\xd1\x80\xd0\xb0\xd0\xb2\xd0\xbb\xd1\x8f\xd1\x8e\xd1\x89\xd0\xb0\xd1\x8f\xd1\x88\xd0\xb0\xd1\x80\xd0\xb8\xd0\xba\xd0\xbe\xd0\xb2\xd0\xb0\xd1\x8f450\xd0\xbc\xd0\xbc\xd0\xb1\xd0\xb5\xd0\xbb\xd0\xb0\xd1\x8f2\xd1\x88\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/62/625002416-0.jpg',
+ 'price': '229.90\xd0\xb7\xd0\xb0\xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:04 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/petli_mebelnye5426/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:35:04 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\xb5\xd1\x82\xd0\xbb\xd1\x8f\xd0\xbc\xd0\xb5\xd0\xb1\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xb1\xd1\x8b\xd1\x81\xd1\x82\xd1\x80\xd0\xbe\xd0\xb3\xd0\xbe\xd0\xbc\xd0\xbe\xd0\xbd\xd1\x82\xd0\xb0\xd0\xb6\xd0\xb0\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbd\xd0\xb0\xd0\xba\xd0\xbb\xd0\xb0\xd0\xb4\xd0\xbd\xd1\x8b\xd1\x85\xd0\xb4\xd0\xb2\xd0\xb5\xd1\x80\xd0\xb5\xd0\xb9105\xd0\xbc\xd0\xbc2\xd1\x88\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/62/625000843-0.jpg',
+ 'price': '109.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xba\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbb'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:05 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/zaglushki_mebelnye2186/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:35:05 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x97\xd0\xb0\xd0\xb3\xd0\xbb\xd1\x83\xd1\x88\xd0\xba\xd0\xb0\xd0\xbc\xd0\xb5\xd0\xb1\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xbf\xd0\xbe\xd0\xb4\xd0\xbe\xd1\x82\xd0\xb2\xd0\xb5\xd1\x80\xd1\x81\xd1\x82\xd0\xb8\xd0\xb5D10\xd0\xb1\xd0\xb5\xd0\xbb\xd0\xb0\xd1\x8f10\xd1\x88\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/72/720000369-0.jpg',
+ 'price': '19.90\xd0\xb7\xd0\xb0\xd1\x83\xd0\xbf\xd0\xb0\xd0\xba',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x83\xd0\xbf\xd0\xb0\xd0\xba'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:06 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/komplektuyushchie/> (referer: https://www.baucenter.ru/lenta_diodnaya_i_komplektuyushchie/)
+2016-09-13 09:35:06 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9a\xd0\xbe\xd0\xbd\xd1\x82\xd1\x80\xd0\xbe\xd0\xbb\xd0\xbb\xd0\xb5\xd1\x80\xd1\x81\xd0\x9f\xd0\x94\xd0\xa3RGB72\xd0\x92\xd1\x823\xd0\xba\xd0\xb0\xd0\xbd\xd0\xb0\xd0\xbb\xd0\xb0\xd0\x98\xd0\xad\xd0\x9a',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/80/806000103-0.jpg',
+ 'price': '399.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:07 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kolesnye_opory7344/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:35:07 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9e\xd0\xbf\xd0\xbe\xd1\x80\xd0\xb0\xd0\xba\xd0\xbe\xd0\xbb\xd0\xb5\xd1\x81\xd0\xbd\xd0\xb0\xd1\x8fd50\xd0\xbc\xd0\xbc\xd0\xb4\xd0\xbb\xd1\x8f\xd0\x94\xd0\xa1\xd0\x9f16\xd0\xbc\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/62/625000868-0.jpg',
+ 'price': '49.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:08 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/vinodelie_samogonovarenie_pivovarenie/> (referer: https://www.baucenter.ru/khranenie_urozhaya/)
+2016-09-13 09:35:08 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x94\xd1\x80\xd0\xbe\xd0\xb6\xd0\xb6\xd0\xb8\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xb4\xd0\xb8\xd1\x81\xd1\x82\xd0\xb8\xd0\xbb\xd0\xbb\xd1\x8f\xd1\x86\xd0\xb8\xd0\xb8FERMIOL',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/934002578-0.jpg',
+ 'price': '89.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:09 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/banki_kryshki_dlya_konservirovaniya/> (referer: https://www.baucenter.ru/khranenie_urozhaya/)
+2016-09-13 09:35:09 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x91\xd0\xb0\xd0\xbd\xd0\xba\xd0\xb0\xd1\x81\xd1\x82\xd0\xb5\xd0\xba\xd0\xbb\xd1\x8f\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xa2\xd0\x92\xd0\x98\xd0\xa1\xd0\xa2\xd0\xb2\xd0\xb8\xd0\xbd\xd1\x82\xd0\xbe\xd0\xb2\xd0\xb0\xd1\x8f1500\xd0\xbc\xd0\xbb',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/934002360-0.jpg',
+ 'price': '29.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:10 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/iskusstvennye_rasteniya/> (referer: https://www.baucenter.ru/vazy_svechi_aksessuary_dlya_tsvetov/)
+2016-09-13 09:35:10 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9a\xd0\xb0\xd0\xbc\xd0\xbd\xd0\xb8\xd0\xb4\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb0\xd1\x82\xd0\xb8\xd0\xb2\xd0\xbd\xd1\x8b\xd0\xb5\xd0\xbf\xd1\x80\xd0\xbe\xd0\xb7\xd1\x80\xd0\xb0\xd1\x87\xd0\xbd\xd1\x8b\xd0\xb5AQUALINES\xd0\x9c\xd0\x98\xd0\x9a\xd0\xa1500\xd0\xbc\xd0\xbb',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/937000986-0.jpg',
+ 'price': '149.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:11 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kamen_dekorativnyy/> (referer: https://www.baucenter.ru/materialy_dlya_sadovykh_dorozhek1/)
+2016-09-13 09:35:11 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9a\xd1\x80\xd0\xbe\xd1\x88\xd0\xba\xd0\xb0\xd0\xb7\xd0\xb5\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xb7\xd0\xbc\xd0\xb5\xd0\xb5\xd0\xb2\xd0\xb8\xd0\xba5-10\xd0\xbc\xd0\xbc,25\xd0\xba\xd0\xb3',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/91/910000196-0.jpg',
+ 'price': '549.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:11 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kora_i_shchepa2/> (referer: https://www.baucenter.ru/materialy_dlya_sadovykh_dorozhek1/)
+2016-09-13 09:35:12 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa9\xd0\xb5\xd0\xbf\xd0\xb0\xd0\xb4\xd0\xb5\xd0\xba\xd0\xbe\xd1\x80\xd0\xb0\xd1\x82\xd0\xb8\xd0\xb2\xd0\xbd\xd0\xb0\xd1\x8f\xd0\x9a\xd0\xbe\xd1\x80\xd0\xb8\xd1\x87\xd0\xbd\xd0\xb5\xd0\xb2\xd0\xb0\xd1\x8f60\xd0\xbb',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/933000147-0.jpg',
+ 'price': '689.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:12 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sredstva_ot_vrediteley_sornyakov9137/> (referer: https://www.baucenter.ru/udobreniya4125/)
+2016-09-13 09:35:12 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xad\xd0\xb6\xd0\xb5\xd0\xba\xd1\x82\xd0\xbe\xd1\x80\xd0\xba\xd0\xbe\xd0\xbd\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80\xd0\xb0\xd1\x82\xd0\xbe\xd1\x82\xd0\xbc\xd1\x83\xd1\x80\xd0\xb0\xd0\xb2\xd1\x8c\xd0\xb5\xd0\xb2,\xd0\xba\xd0\xbb\xd0\xb5\xd1\x89\xd0\xb5\xd0\xb9,\xd0\xb4\xd1\x80\xd1\x83\xd0\xb3\xd0\xb8\xd1\x85\xd0\xbd\xd0\xb0\xd1\x81\xd0\xb5\xd0\xba\xd0\xbe\xd0\xbc\xd1\x8b\xd1\x851\xd0\xbbDrKlausInsectSuper',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/933000215-0.jpg',
+ 'price': '439.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:13 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/zashchelki_i_zamki_mebelnye5620/> (referer: https://www.baucenter.ru/mebelnaya_furnitura/)
+2016-09-13 09:35:13 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x97\xd0\xb0\xd0\xbc\xd0\xbe\xd0\xba\xd0\xbc\xd0\xb5\xd0\xb1\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xbd\xd1\x8b\xd0\xb9\xd0\xbc\xd0\xbe\xd0\xb4\xd0\xb5\xd0\xbb\xd1\x8c138\xd0\xbd\xd0\xb8\xd0\xba\xd0\xb5\xd0\xbb\xd1\x8c',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/62/625001356-0.jpg',
+ 'price': '79.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:13 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/drenazh_naruzhnaya_kanalizatsiya/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:14 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sredstva_ot_bolezney_stimulyatory_rosta9839/> (referer: https://www.baucenter.ru/udobreniya4125/)
+2016-09-13 09:35:14 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd1\x80\xd0\xb5\xd0\xb4\xd1\x81\xd1\x82\xd0\xb2\xd0\xbe\xd0\xb7\xd0\xb0\xd1\x89\xd0\xb8\xd1\x82\xd1\x8b\xd1\x80\xd0\xb0\xd1\x81\xd1\x82\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb9\xd0\x96\xd0\xb5\xd0\xbb\xd0\xb5\xd0\xb7\xd0\xbd\xd1\x8b\xd0\xb9\xd0\xba\xd1\x83\xd0\xbf\xd0\xbe\xd1\x80\xd0\xbe\xd1\x81250\xd0\xb3\xd1\x80',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/932000209-0.jpg',
+ 'price': '129.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:14 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/udobreniya_dlya_komnatnykh_rasteniy6469/> (referer: https://www.baucenter.ru/udobreniya4125/)
+2016-09-13 09:35:14 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa2\xd0\xbe\xd0\xbd\xd0\xb8\xd0\xba\xd1\x81\xd1\x83\xd1\x85\xd0\xbe\xd0\xb9\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbb\xd0\xb8\xd1\x81\xd1\x82\xd1\x8c\xd0\xb5\xd0\xb23\xd0\xb3',
+ 'photo_path': '/preview/r/x0/c/x0',
+ 'price': '17.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:15 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/svetilniki_tochechnye_interernye/> (referer: https://www.baucenter.ru/svetilniki_tochechnye/)
+2016-09-13 09:35:15 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd0\xb2\xd0\xb5\xd1\x82\xd0\xb8\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xb8\xd0\xba\xd1\x82\xd0\xbe\xd1\x87\xd0\xb5\xd1\x87\xd0\xbd\xd1\x8b\xd0\xb9\xd0\xb4\xd0\xb8\xd0\xbe\xd0\xb4\xd0\xbd\xd1\x8b\xd0\xb912\xd0\x92\xd1\x82\xd1\x85\xd0\xbe\xd0\xbb\xd0\xbe\xd0\xb4\xd0\xbd\xd1\x8b\xd0\xb9\xd1\x81\xd0\xb2\xd0\xb5\xd1\x82\xd0\xb1\xd0\xb5\xd0\xbb\xd1\x8b\xd0\xb9Philips',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/80/809000166-0.jpg',
+ 'price': '999.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:15 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/gipsokarton_i_profili/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:15 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/okna/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:16 [scrapy] INFO: Crawled 75 pages (at 75 pages/min), scraped 0 items (at 0 items/min)
+2016-09-13 09:35:17 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistema_podvesnykh_potolkov/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:17 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/vazy/> (referer: https://www.baucenter.ru/vazy_svechi_aksessuary_dlya_tsvetov/)
+2016-09-13 09:35:17 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x92\xd0\xb0\xd0\xb7\xd0\xb0\xd0\xba\xd0\xb5\xd1\x80\xd0\xb0\xd0\xbc\xd0\xb8\xd1\x87\xd0\xb5\xd1\x81\xd0\xba\xd0\xb0\xd1\x8fHAWANAJ2721\xd1\x81\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/93/937000906-0.jpg',
+ 'price': '399.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:17 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kirpich_bloki_stroitelnye/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:17 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/betonomeshalki_lesa_stremyanki/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:17 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/izolyatsionnye_materialy/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:18 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/zashchita_tela/> (referer: https://www.baucenter.ru/antimoskitnye_setki_repelenty/)
+2016-09-13 09:35:18 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x90\xd1\x8d\xd1\x80\xd0\xbe\xd0\xb7\xd0\xbe\xd0\xbb\xd1\x8c\xd0\xbe\xd1\x82\xd0\xba\xd0\xbb\xd0\xb5\xd1\x89\xd0\xb5\xd0\xb9\xd0\xb8\xd0\xba\xd0\xbe\xd0\xbc\xd0\xb0\xd1\x80\xd0\xbe\xd0\xb2\xd1\x80\xd0\xb5\xd0\xbf\xd0\xb5\xd0\xbb\xd0\xbb\xd0\xb5\xd0\xbd\xd1\x82\xd0\xbd\xd1\x8b\xd0\xb975\xd0\xbc\xd0\xbbHELP',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/96/961000145-0.jpg',
+ 'price': '99.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:18 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/zashchita_pomeshcheniy/> (referer: https://www.baucenter.ru/antimoskitnye_setki_repelenty/)
+2016-09-13 09:35:19 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/germetiki_grunty_gotovye_klei/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:19 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd0\xb2\xd0\xb5\xd1\x87\xd0\xb0\xd0\xb0\xd1\x80\xd0\xbe\xd0\xbc\xd0\xb0\xd1\x82\xd0\xb8\xd0\xb7\xd0\xb8\xd1\x80\xd0\xbe\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xb0\xd0\xbd\xd1\x82\xd0\xb8\xd0\xbc\xd0\xbe\xd1\x81\xd0\xba\xd0\xb8\xd1\x82\xd0\xbd\xd0\xb0\xd1\x8f\xd1\x83\xd0\xbb\xd0\xb8\xd1\x87\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xbd\xd0\xb0\xd1\x82\xd1\x80\xd0\xbe\xd1\x81\xd1\x82\xd0\xb870\xd1\x81\xd0\xbcHELP',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/96/961000194-0.jpg',
+ 'price': '149.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:19 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/teploizolyatsiya/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:19 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/krovlya_vodostoki/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:19 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/smesi_sukhie_stroitelnye/> (referer: https://www.baucenter.ru/stroymaterialy/)
+2016-09-13 09:35:21 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistema_kanalizatsii_naruzhnoy/> (referer: https://www.baucenter.ru/drenazh_naruzhnaya_kanalizatsiya/)
+2016-09-13 09:35:21 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9b\xd1\x8e\xd0\xba\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb8\xd0\xbf\xd1\x80\xd0\xbe\xd0\xbf\xd0\xb8\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xbe\xd0\xb2\xd1\x8b\xd0\xb9\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbf\xd0\xbe\xd0\xb4\xd1\x8a\xd0\xb5\xd0\xbc\xd0\xbd\xd1\x8b\xd1\x85\xd1\x82\xd1\x80\xd1\x83\xd0\xb1d315',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/53/537000315-0.jpg',
+ 'price': '1099.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:21 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistema_drenazha/> (referer: https://www.baucenter.ru/drenazh_naruzhnaya_kanalizatsiya/)
+2016-09-13 09:35:21 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa2\xd1\x80\xd1\x83\xd0\xb1\xd0\xb0\xd0\xb4\xd1\x80\xd0\xb5\xd0\xbd\xd0\xb0\xd0\xb6\xd0\xbd\xd0\xb0\xd1\x8fPVC100\xd0\xbc\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/53/537000039-0.jpg',
+ 'price': '99.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd0\xbc',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd0\xbc'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:22 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistema_vodootvoda/> (referer: https://www.baucenter.ru/drenazh_naruzhnaya_kanalizatsiya/)
+2016-09-13 09:35:22 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9b\xd0\xbe\xd1\x82\xd0\xbe\xd0\xba\xd0\xbf\xd0\xbb\xd0\xb0\xd1\x81\xd1\x82\xd0\xb8\xd0\xba\xd0\xbe\xd0\xb2\xd1\x8b\xd0\xb9\xd0\xa1\xd0\xbf\xd0\xb0\xd1\x80\xd0\xba\xd1\x81\xd0\xbf\xd0\xbb\xd0\xb0\xd1\x81\xd1\x82\xd0\xb8\xd0\xba\xd0\xbe\xd0\xb2\xd0\xbe\xd0\xb9\xd1\x80\xd0\xb5\xd1\x88\xd0\xb5\xd1\x82\xd0\xba\xd0\xbe\xd0\xb91000\xd1\x8590\xd1\x8590\xd0\xbc\xd0\xbc\xd0\xb4\xd0\xbe1,5\xd1\x82\xd0\xbe\xd0\xbd\xd0\xbd',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/53/537000366-0.jpg',
+ 'price': '399.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:22 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kaminy_pechi_aksessuary/> (referer: https://www.baucenter.ru/vodosnabzhenie_otoplenie/)
+2016-09-13 09:35:23 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/elementy_soedinitelnye/> (referer: https://www.baucenter.ru/gipsokarton_i_profili/)
+2016-09-13 09:35:23 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\xbe\xd0\xb4\xd0\xb2\xd0\xb5\xd1\x81\xd0\xbf\xd1\x80\xd1\x8f\xd0\xbc\xd0\xbe\xd0\xb9\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbf\xd1\x80\xd0\xbe\xd1\x84\xd0\xb8\xd0\xbb\xd0\xb5\xd0\xb960\xd1\x8530\xd1\x85120\xd0\xbc\xd0\xbcKnauf',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/50/506000193-0.jpg',
+ 'price': '10.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:23 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/elementy_dlya_pvkh_okon_i_dverey/> (referer: https://www.baucenter.ru/okna/)
+2016-09-13 09:35:24 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x93\xd0\xb5\xd1\x80\xd0\xbc\xd0\xb5\xd1\x82\xd0\xb8\xd0\xba\xd0\xa1\xd0\xa2\xd0\x98\xd0\x97-\xd0\x903\xd0\xba\xd0\xb3',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/510000047-0.jpg',
+ 'price': '349.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:24 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/okna_mansardnye_lyuki/> (referer: https://www.baucenter.ru/okna/)
+2016-09-13 09:35:24 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa8\xd1\x82\xd0\xbe\xd1\x80\xd0\xb0\xd1\x80\xd1\x83\xd0\xbb\xd0\xbe\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xbd\xd0\xb0\xd0\xba\xd1\x80\xd1\x8e\xd1\x87\xd0\xba\xd0\xb0\xd1\x85\xd0\xbf\xd0\xbe\xd0\xb4\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbc\xd0\xb0\xd0\xbd\xd1\x81\xd0\xb0\xd1\x80\xd0\xb4\xd0\xbd\xd0\xbe\xd0\xb3\xd0\xbe\xd0\xbe\xd0\xba\xd0\xbd\xd0\xb0RHLCK004000550\xd1\x85980\xd0\xbc\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/510000216-0.jpg',
+ 'price': '2199.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:25 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/potolok_reechnyy/> (referer: https://www.baucenter.ru/sistema_podvesnykh_potolkov/)
+2016-09-13 09:35:25 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9d\xd0\xb0\xd0\xb1\xd0\xbe\xd1\x80\xd1\x80\xd0\xb5\xd0\xb5\xd1\x87\xd0\xbd\xd0\xbe\xd0\xb3\xd0\xbe\xd0\xbf\xd0\xbe\xd1\x82\xd0\xbe\xd0\xbb\xd0\xba\xd0\xb02\xd1\x851\xd0\xbcS150\xd0\xbc\xd0\xb8\xd1\x80\xd0\xb0\xd0\xb6',
+ 'photo_path': '/preview/r/x0/c/x0',
+ 'price': '2199.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x83\xd0\xbf\xd0\xb0\xd0\xba',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x83\xd0\xbf\xd0\xb0\xd0\xba'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:26 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kirpich_keramicheskiy/> (referer: https://www.baucenter.ru/kirpich_bloki_stroitelnye/)
+2016-09-13 09:35:26 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9a\xd0\xb8\xd1\x80\xd0\xbf\xd0\xb8\xd1\x87\xd0\xba\xd0\xb5\xd1\x80\xd0\xb0\xd0\xbc\xd0\xb8\xd1\x87\xd0\xb5\xd1\x81\xd0\xba\xd0\xb8\xd0\xb9\xd0\xbf\xd1\x83\xd1\x81\xd1\x82\xd0\xbe\xd1\x82\xd0\xb5\xd0\xbb\xd1\x8b\xd0\xb9\xd0\xbe\xd0\xb4\xd0\xb8\xd0\xbd\xd0\xb0\xd1\x80\xd0\xbd\xd1\x8b\xd0\xb9\xd1\x80\xd1\x8f\xd0\xb4\xd0\xbe\xd0\xb2\xd0\xbe\xd0\xb9250\xd1\x85120\xd1\x8565\xd0\xbc\xd0\xbc\xd0\x9c-150',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/50/508000056-0.jpg',
+ 'price': '9.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:26 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/stremyanki_i_lestnitsy/> (referer: https://www.baucenter.ru/betonomeshalki_lesa_stremyanki/)
+2016-09-13 09:35:26 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd1\x82\xd1\x80\xd0\xb5\xd0\xbc\xd1\x8f\xd0\xbd\xd0\xba\xd0\xb0\xd0\xbe\xd0\xb4\xd0\xbd\xd0\xbe\xd1\x81\xd1\x82\xd0\xbe\xd1\x80\xd0\xbe\xd0\xbd\xd0\xbd\xd1\x8f\xd1\x8f\xd1\x81\xd1\x82\xd0\xb0\xd0\xbb\xd1\x8c\xd0\xbd\xd0\xb0\xd1\x8f4\xd1\x81\xd1\x82\xd1\x83\xd0\xbf\xd0\xb5\xd0\xbd\xd0\xb8',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/53/535000040-0.jpg',
+ 'price': '839.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:27 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2016-09-13 09:35:27 [scrapy] INFO: Closing spider (shutdown)
+2016-09-13 09:35:27 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistema_zvukoizolyatsii/> (referer: https://www.baucenter.ru/izolyatsionnye_materialy/)
+2016-09-13 09:35:27 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\xb0\xd0\xbd\xd0\xb5\xd0\xbb\xd1\x8c\xd0\xb7\xd0\xb2\xd1\x83\xd0\xba\xd0\xbe\xd0\xb8\xd0\xb7\xd0\xbe\xd0\xbb\xd1\x8f\xd1\x86\xd0\xb8\xd0\xbe\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f\xd0\x9a\xd0\xbe\xd0\xbc\xd0\xbf\xd0\xbe\xd1\x80\xd1\x82\xd0\xbe\xd1\x82\xd0\xb2\xd0\xbe\xd0\xb7\xd0\xb4\xd1\x83\xd1\x88\xd0\xbd\xd0\xbe\xd0\xb3\xd0\xbe\xd1\x88\xd1\x83\xd0\xbc\xd0\xb0(20\xd0\x94\xd0\x91)',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/52/528000360-0.jpg',
+ 'price': '1699.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:28 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/sistema_gidroizolyatsii/> (referer: https://www.baucenter.ru/izolyatsionnye_materialy/)
+2016-09-13 09:35:28 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x93\xd0\xb8\xd0\xb4\xd1\x80\xd0\xbe\xd0\xb8\xd0\xb7\xd0\xbe\xd0\xbb\xd1\x8f\xd1\x86\xd0\xb8\xd1\x8f\xd0\xbe\xd1\x82\xd1\x81\xd0\xb5\xd1\x87\xd0\xbd\xd0\xb0\xd1\x8f0,4\xd1\x8520\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/52/528000348-0.jpg',
+ 'price': '799.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:28 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/shpaklevki_gotovye/> (referer: https://www.baucenter.ru/germetiki_grunty_gotovye_klei/)
+2016-09-13 09:35:28 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa8\xd0\xbf\xd0\xb0\xd0\xba\xd0\xbb\xd0\xb5\xd0\xb2\xd0\xba\xd0\xb0\xd0\xb3\xd0\xbe\xd1\x82\xd0\xbe\xd0\xb2\xd0\xb0\xd1\x8fROTBANDPASTA\xd0\x9f\xd1\x80\xd0\xbe\xd1\x84\xd0\xb818\xd0\xba\xd0\xb3',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/515000894-0.jpg',
+ 'price': '799.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:29 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/plenki_tekhnicheskie_i_parnikovye/> (referer: https://www.baucenter.ru/izolyatsionnye_materialy/)
+2016-09-13 09:35:29 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xba\xd0\xb0\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb8\xd1\x8d\xd1\x82\xd0\xb8\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xb0\xd1\x8f\xd0\xb8\xd0\xb7\xd0\xbe\xd0\xbb\xd1\x8f\xd1\x86\xd0\xb8\xd0\xbe\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f0,15\xd0\xbc\xd0\xbc\xd1\x87\xd0\xb5\xd1\x80\xd0\xbd\xd0\xb0\xd1\x8f2x50\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/52/528000160-0.jpg',
+ 'price': '499.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x80\xd1\x83\xd0\xbb',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x80\xd1\x83\xd0\xbb'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:30 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/elementy_montazhnye_dlya_teploizolyatsii/> (referer: https://www.baucenter.ru/teploizolyatsiya/)
+2016-09-13 09:35:30 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\xbb\xd0\xb0\xd0\xbd\xd0\xba\xd0\xb0\xd0\xbf\xd1\x80\xd0\xb8\xd0\xbe\xd0\xba\xd0\xbe\xd0\xbd\xd0\xbd\xd0\xb0\xd1\x8f\xd1\x81\xd1\x81\xd0\xb5\xd1\x82\xd0\xba\xd0\xbe\xd0\xb9\xd0\x9f\xd0\x92\xd0\xa52500\xd0\xbc\xd0\xbc',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/52/525000300-0.jpg',
+ 'price': '129.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:30 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/cherepitsa_bitumnaya/> (referer: https://www.baucenter.ru/krovlya_vodostoki/)
+2016-09-13 09:35:30 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa7\xd0\xb5\xd1\x80\xd0\xb5\xd0\xbf\xd0\xb8\xd1\x86\xd0\xb0\xd0\xb1\xd0\xb8\xd1\x82\xd1\x83\xd0\xbc\xd0\xbd\xd0\xb0\xd1\x8f\xd0\x9f\xd1\x80\xd0\xb8\xd0\xbc\xd0\xb0Tilercat\xd1\x80\xd0\xbe\xd0\xbc\xd0\xb1\xd0\xba\xd0\xbe\xd1\x80\xd0\xb8\xd1\x87\xd0\xbd\xd0\xb5\xd0\xb2\xd0\xb0\xd1\x8f',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/50/509000804-0.jpg',
+ 'price': '629.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x83\xd0\xbf\xd0\xb0\xd0\xba',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x83\xd0\xbf\xd0\xb0\xd0\xba'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:31 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/tsement_mel_izvest/> (referer: https://www.baucenter.ru/smesi_sukhie_stroitelnye/)
+2016-09-13 09:35:31 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa6\xd0\xb5\xd0\xbc\xd0\xb5\xd0\xbd\xd1\x82\xd0\x9f\xd0\xa6500\xd0\x94050\xd0\xba\xd0\xb3',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/511300101-0.jpg',
+ 'price': '274.90\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:32 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/smesi_shpatlevochnye/> (referer: https://www.baucenter.ru/smesi_sukhie_stroitelnye/)
+2016-09-13 09:35:32 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa8\xd0\xbf\xd0\xb0\xd0\xba\xd0\xbb\xd0\xb5\xd0\xb2\xd0\xba\xd0\xb0\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb8\xd0\xbc\xd0\xb5\xd1\x80\xd0\xbd\xd0\xb0\xd1\x8f\xd0\xb3\xd0\xb8\xd0\xbf\xd1\x81\xd0\xbe\xd0\xb2\xd0\xb0\xd1\x8f\xd1\x84\xd0\xb8\xd0\xbd\xd0\xb8\xd1\x88\xd0\xbd\xd0\xb0\xd1\x8f\xd0\x9a\xd0\xa020\xd0\xba\xd0\xb3\xd0\xa1\xd1\x82\xd0\xb0\xd1\x80\xd0\xb0\xd1\x82\xd0\xb5\xd0\xbb\xd0\xb8',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/511000440-0.jpg',
+ 'price': '309.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:33 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/smesi_shtukaturnye/> (referer: https://www.baucenter.ru/smesi_sukhie_stroitelnye/)
+2016-09-13 09:35:33 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa8\xd1\x82\xd1\x83\xd0\xba\xd0\xb0\xd1\x82\xd1\x83\xd1\x80\xd0\xba\xd0\xb0\xd0\xb3\xd0\xb8\xd0\xbf\xd1\x81\xd0\xbe\xd0\xb2\xd0\xb0\xd1\x8fROTBANDKnauf25\xd0\xba\xd0\xb3',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/511000304-0.jpg',
+ 'price': '375.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:33 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/smesi_dlya_pola_vyravnivayushchie/> (referer: https://www.baucenter.ru/smesi_sukhie_stroitelnye/)
+2016-09-13 09:35:33 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\xa1\xd0\xbe\xd1\x81\xd1\x82\xd0\xb0\xd0\xb2\xd1\x83\xd0\xba\xd1\x80\xd0\xb5\xd0\xbf\xd0\xbb\xd1\x8f\xd1\x8e\xd1\x89\xd0\xb8\xd0\xb9\xd0\xa1\xd0\xb4\xd0\xb5\xd0\xbb\xd0\xb0\xd0\xb9\xd0\x9f\xd0\x9e\xd0\x9b\xd0\xbd\xd0\xb020\xd0\xbc2',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/511001206-0.jpg',
+ 'price': '3299.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:34 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/elektrokaminy/> (referer: https://www.baucenter.ru/kaminy_pechi_aksessuary/)
+2016-09-13 09:35:34 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9e\xd0\xb1\xd1\x80\xd0\xb0\xd0\xbc\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xb8\xd0\xb5"\xd0\xa4\xd0\x98\xd0\x9b\xd0\x90\xd0\x94\xd0\x95\xd0\x9b\xd0\xac\xd0\xa4\xd0\x98\xd0\xaf"\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbe\xd1\x87\xd0\xb0\xd0\xb3\xd0\xb026\'\'\xd1\x82\xd0\xb5\xd0\xbc\xd0\xbd\xd1\x8b\xd0\xb9\xd0\xbe\xd1\x80\xd0\xb5\xd1\x85',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/53/539000768-0.jpg',
+ 'price': '14990.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:34 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kaminy_pechi/> (referer: https://www.baucenter.ru/kaminy_pechi_aksessuary/)
+2016-09-13 09:35:35 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\xb5\xd1\x87\xd1\x8c-\xd0\xba\xd0\xb0\xd0\xbc\xd0\xb8\xd0\xbd\xd0\x9c\xd0\xbe\xd1\x81\xd0\xba\xd0\xb2\xd0\xb0121200\xd1\x85880\xd1\x8555512\xd0\xba\xd0\x92\xd1\x82',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/53/539000729-0.jpg',
+ 'price': '39990.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:35 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/aksessuary_dlya_kaminov/> (referer: https://www.baucenter.ru/kaminy_pechi_aksessuary/)
+2016-09-13 09:35:35 [scrapy] ERROR: Spider error processing <GET https://www.baucenter.ru/aksessuary_dlya_kaminov/> (referer: https://www.baucenter.ru/kaminy_pechi_aksessuary/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spiders/crawl.py", line 72, in _parse_response
+    cb_res = callback(response, **cb_kwargs) or ()
+  File "pbot/spiders/baucenter.py", line 74, in parse_arts
+    print(act_name)
+IOError: [Errno 32] Broken pipe
+2016-09-13 09:35:36 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kleya_dlya_plitki/> (referer: https://www.baucenter.ru/smesi_sukhie_stroitelnye/)
+2016-09-13 09:35:36 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/rastvory_kladochnye/> (referer: https://www.baucenter.ru/smesi_sukhie_stroitelnye/)
+2016-09-13 09:35:36 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9a\xd0\xbb\xd0\xb5\xd0\xb9\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xba\xd0\xb5\xd1\x80\xd0\xb0\xd0\xbc\xd0\xbe\xd0\xb3\xd1\x80\xd0\xb0\xd0\xbd\xd0\xb8\xd1\x82\xd0\xb0\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xb2\xd0\xbd\xd1\x83\xd1\x82\xd1\x80\xd0\xb5\xd0\xbd\xd0\xbd\xd0\xb8\xd1\x85\xd0\xb8\xd0\xbd\xd0\xb0\xd1\x80\xd1\x83\xd0\xb6\xd0\xbd\xd1\x8b\xd1\x85\xd1\x80\xd0\xb0\xd0\xb1\xd0\xbe\xd1\x82\xd0\xa1\xd0\x9c14ExtraCeresit25\xd0\xba\xd0\xb3',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/511000744-0.jpg',
+ 'price': '469.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:36 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9f\xd0\x95\xd0\x9d\xd0\x90-\xd0\xa6\xd0\x95\xd0\x9c\xd0\x95\xd0\x9d\xd0\xa2\xd0\xbf\xd0\xb8\xd1\x81\xd1\x82\xd0\xbe\xd0\xbb\xd0\xb5\xd1\x82\xd0\xbd\xd0\xb0\xd1\x8fMAKROFLEX',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/515000934-0.jpg',
+ 'price': '549.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:37 [scrapy] DEBUG: Crawled (200) <GET https://www.baucenter.ru/kleya_dlya_uteplitelya/> (referer: https://www.baucenter.ru/smesi_sukhie_stroitelnye/)
+2016-09-13 09:35:37 [scrapy] ERROR: Error processing {'competitor': '\xd0\x91\xd0\xb0\xd1\x83\xd1\x86\xd0\xb5\xd0\xbd\xd1\x82\xd1\x80',
+ 'name': '\xd0\x9a\xd0\xbb\xd0\xb5\xd0\xb9-\xd0\xbf\xd0\xb5\xd0\xbd\xd0\xb0\xd0\xb4\xd0\xbb\xd1\x8f\xd0\xbf\xd0\xb5\xd0\xbd\xd0\xbe\xd0\xbf\xd0\xbe\xd0\xbb\xd0\xb8\xd1\x81\xd1\x82\xd0\xb8\xd1\x80\xd0\xbe\xd0\xbb\xd0\xb0CT84Ceresit850\xd0\xbc\xd0\xbb',
+ 'photo_path': '/preview/r/278x278/c/278x278/upload/pictures/51/511001145-0.jpg',
+ 'price': '699.\xe2\x80\x93\xd0\xb7\xd0\xb0\xd1\x88\xd1\x82',
+ 'task': '3',
+ 'unit': '\xd0\xb7\xd0\xb0 \xd1\x88\xd1\x82'}
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/Twisted-15.4.0-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "pbot/pipelines.py", line 16, in process_item
+    item.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 35, in save
+    self.instance.save()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy_djangoitem/__init__.py", line 72, in instance
+    self._instance = self.django_model(**modelargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'3'": "Article.task" must be a "Task" instance.
+2016-09-13 09:35:37 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 55906,
+ 'downloader/request_count': 112,
+ 'downloader/request_method_count/GET': 112,
+ 'downloader/response_bytes': 4068552,
+ 'downloader/response_count': 112,
+ 'downloader/response_status_count/200': 112,
+ 'dupefilter/filtered': 109,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2016, 9, 13, 9, 35, 37, 903345),
+ 'log_count/DEBUG': 114,
+ 'log_count/ERROR': 68,
+ 'log_count/INFO': 9,
+ 'request_depth_max': 5,
+ 'response_received_count': 112,
+ 'scheduler/dequeued': 111,
+ 'scheduler/dequeued/memory': 111,
+ 'scheduler/enqueued': 230,
+ 'scheduler/enqueued/memory': 230,
+ 'spider_exceptions/IOError': 1,
+ 'start_time': datetime.datetime(2016, 9, 13, 9, 34, 16, 128988)}
+2016-09-13 09:35:37 [scrapy] INFO: Spider closed (shutdown)
